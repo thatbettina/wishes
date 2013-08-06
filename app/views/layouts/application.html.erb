@@ -60,6 +60,10 @@
         line-height: 24px;
       }
 
+      ul {
+        list-style-type: none;
+      }
+
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -129,19 +133,24 @@
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">While backing up my computer last month, I found a list of birthday presents I had requested when I turned 26.</p> 
-          <p class="lead">Instead of physical gifts, I asked everyone I knew what advice they'd give to themselves at age 26, the best thing they did when they were 26, and what they wish they had done at age 26.</p>
-          <p class="lead">Since this was years ago, I asked them to email me back their answers that I hand copied into a Word document, which I then emailed back to everyone.</p>
-          <p class="lead">For my 33rd birthday this year, I want to leverage technology to collect and share your advice.</p>
+          <p>While backing up my computer last month, I found a list of birthday presents I had requested when I turned 26.</p> 
+          <p>Instead of physical gifts, I asked everyone I knew what advice they'd give to themselves at age 26, the best thing they did when they were 26, and what they wish they had done at age 26.</p>
+          <p>Since this was years ago, I asked them to email me back their answers that I hand copied into a Word document, which I then emailed back to everyone.</p>
+          <p>For my 33rd birthday this year, I want to leverage technology to collect and share your advice. The vision is that I'd open this platform to the world and get insights from strangers at every age eventually.</p>
+          <p class="lead"><b>For today, to help me celebrate my turning 33, click on '33' above and give me the advice you'd give to your 33-year-old self or the best thing that happened to you at 33 or what you regretted not doing.</p></b>
+          <p>P.S. : For my friends who are younger, why don't you share what you'd like to have done by 33?</p>
+
         </div>
       </div>
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <!-- <div class="row-fluid section1">
+      <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
           <%= yield %>
-      </div> -->
-
+      </div>
+    </div>
+  </div>
   </body>
 </html>

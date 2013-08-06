@@ -4,6 +4,7 @@ class AgesController < ApplicationController
   end
 
   def show
+    @ages = Age.all
     @wish = Wish.new
     @age = Age.find(params[:id])
   end
