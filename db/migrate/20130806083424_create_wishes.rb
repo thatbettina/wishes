@@ -5,7 +5,7 @@ class CreateWishes < ActiveRecord::Migration
      t.text :description
      t.string :link
      t.string :image
-     t.integer :list_id
+     t.integer :age_id
      t.integer :priority
 	 t.timestamps
    end

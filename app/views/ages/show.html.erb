@@ -1,6 +1,13 @@
 <%= link_to("Back to all the ages", ages_path) %>
 
-<h2><%= @age.title %></h2>
+<h1><%= @age.title %></h1>
+
+<ul>
+  <% @age.wishes.each do |wish| %>
+    <li><%= wish.name %> : <%= wish.description %></li>
+    <p>
+  <% end %>
+</ul>
 
 <h2>Create new wish</h2>
 <%= form_for([@age, @wish]) do |f| %>
@@ -14,10 +21,4 @@
   <br>
   <%= f.submit %>
 <% end %>
-
-<ul>
-  <% @age.wishes.each do |wish| %>
-    <li><%= wish.name %> <%= wish.description %></li>
-  <% end %>
-</ul>
  	

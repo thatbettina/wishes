@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20130806083424) do
     t.text     "description"
     t.string   "link"
     t.string   "image"
-    t.integer  "list_id"
+    t.integer  "age_id"
     t.integer  "priority"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
