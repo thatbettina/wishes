@@ -1,0 +1,23 @@
+<%= link_to("Back to all the ages", ages_path) %>
+
+<h2><%= @age.title %></h2>
+
+<h2>Create new wish</h2>
+<%= form_for([@age, @wish]) do |f| %>
+  <%= f.label :name, "Your Name or write anonymous" %>
+  <br>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :description, "Wish" %>
+  <br>
+  <%= f.text_area :description %>
+  <br>
+  <%= f.submit %>
+<% end %>
+
+<ul>
+  <% @age.wishes.each do |wish| %>
+    <li><%= wish.name %> <%= wish.description %></li>
+  <% end %>
+</ul>
+ 	

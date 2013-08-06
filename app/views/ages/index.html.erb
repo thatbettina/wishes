@@ -1,0 +1,9 @@
+<h2>Advice to your younger self</h2>
+<ul>
+  <% @ages.each do |age| %>
+    <li><%= link_to(age.title, age) %>: 
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to("Create new age", new_age_path) %>
