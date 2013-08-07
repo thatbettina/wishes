@@ -9,4 +9,9 @@ class WishesController < ApplicationController
 		end
 	end
 
+	def destroy
+  		@wish = Wish.find(params[:id])
+  		@wish.destroy
+  		redirect_to @age
+	end
 end
