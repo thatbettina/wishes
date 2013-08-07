@@ -10,6 +10,7 @@ class AgesController < ApplicationController
   end
 
   def new
+    @ages = Age.all
     @age = Age.new
   end
 
