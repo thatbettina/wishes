@@ -4,6 +4,6 @@ Birthday::Application.routes.draw do
     resources :wishes
   end
 
-  root to: "ages#show"
+  root to: "ages#index"
 
 end
